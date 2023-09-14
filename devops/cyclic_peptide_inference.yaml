@@ -39,7 +39,6 @@ spec:
         command: [bash]
         source: |
           source activate psp
-          pip install -q --no-warn-conflicts 'colabfold[alphafold-minus-jax] @ git+https://github.com/sokrypton/ColabFold'
           pip install --upgrade dm-haiku
           ln -s /usr/local/lib/python3.*/dist-packages/colabfold colabfold
           ln -s /usr/local/lib/python3.*/dist-packages/alphafold alphafold

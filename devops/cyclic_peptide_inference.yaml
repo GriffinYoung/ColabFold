@@ -39,6 +39,7 @@ spec:
         command: [bash]
         source: |
           source activate psp
+          apt-get install curl # for install_colabbatch_linux.sh
           wget https://raw.githubusercontent.com/YoshitakaMo/localcolabfold/main/install_colabbatch_linux.sh
           bash install_colabbatch_linux.sh
           export COLABFOLDDIR="localcolabfold"
